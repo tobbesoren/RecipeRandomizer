@@ -10,12 +10,16 @@
 		9C35B4A829C0832000AFD434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35B4A729C0832000AFD434 /* AppDelegate.swift */; };
 		9C35B4AA29C0832000AFD434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35B4A929C0832000AFD434 /* SceneDelegate.swift */; };
 		9C35B4AC29C0832000AFD434 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35B4AB29C0832000AFD434 /* ViewController.swift */; };
-		9C35B4AF29C0832000AFD434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C35B4AD29C0832000AFD434 /* Main.storyboard */; };
+		9C35B4AF29C0832000AFD434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C35B4AD29C0832000AFD434 /* Main.storyboard */; settings = {ASSET_TAGS = (RandomRecipeID, ); }; };
 		9C35B4B129C0832000AFD434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C35B4B029C0832000AFD434 /* Assets.xcassets */; };
 		9C35B4B429C0832000AFD434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C35B4B229C0832000AFD434 /* LaunchScreen.storyboard */; };
 		9C35B4BF29C0832000AFD434 /* RecipeRandomizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35B4BE29C0832000AFD434 /* RecipeRandomizerTests.swift */; };
 		9C35B4C929C0832100AFD434 /* RecipeRandomizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35B4C829C0832100AFD434 /* RecipeRandomizerUITests.swift */; };
 		9C35B4CB29C0832100AFD434 /* RecipeRandomizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35B4CA29C0832100AFD434 /* RecipeRandomizerUITestsLaunchTests.swift */; };
+		9C35B4D829C0BE3400AFD434 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35B4D729C0BE3400AFD434 /* Dish.swift */; };
+		9C35B4DA29C1C16600AFD434 /* DishCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35B4D929C1C16600AFD434 /* DishCollection.swift */; };
+		9C9F930E29C3759F0029CA22 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F930D29C3759F0029CA22 /* AddRecipeViewController.swift */; };
+		9C9F931029C75B900029CA22 /* ShowRandomRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F930F29C75B900029CA22 /* ShowRandomRecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		9C35B4C429C0832100AFD434 /* RecipeRandomizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeRandomizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C35B4C829C0832100AFD434 /* RecipeRandomizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRandomizerUITests.swift; sourceTree = "<group>"; };
 		9C35B4CA29C0832100AFD434 /* RecipeRandomizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRandomizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9C35B4D729C0BE3400AFD434 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		9C35B4D929C1C16600AFD434 /* DishCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCollection.swift; sourceTree = "<group>"; };
+		9C9F930D29C3759F0029CA22 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
+		9C9F930F29C75B900029CA22 /* ShowRandomRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRandomRecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,14 @@
 		9C35B4A629C0832000AFD434 /* RecipeRandomizer */ = {
 			isa = PBXGroup;
 			children = (
+				9C9F930D29C3759F0029CA22 /* AddRecipeViewController.swift */,
 				9C35B4A729C0832000AFD434 /* AppDelegate.swift */,
 				9C35B4A929C0832000AFD434 /* SceneDelegate.swift */,
 				9C35B4AB29C0832000AFD434 /* ViewController.swift */,
+				9C9F930F29C75B900029CA22 /* ShowRandomRecipeViewController.swift */,
 				9C35B4AD29C0832000AFD434 /* Main.storyboard */,
+				9C35B4D729C0BE3400AFD434 /* Dish.swift */,
+				9C35B4D929C1C16600AFD434 /* DishCollection.swift */,
 				9C35B4B029C0832000AFD434 /* Assets.xcassets */,
 				9C35B4B229C0832000AFD434 /* LaunchScreen.storyboard */,
 				9C35B4B529C0832000AFD434 /* Info.plist */,
@@ -190,6 +202,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					RandomRecipeID,
+				);
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
@@ -258,7 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9F931029C75B900029CA22 /* ShowRandomRecipeViewController.swift in Sources */,
+				9C9F930E29C3759F0029CA22 /* AddRecipeViewController.swift in Sources */,
 				9C35B4AC29C0832000AFD434 /* ViewController.swift in Sources */,
+				9C35B4DA29C1C16600AFD434 /* DishCollection.swift in Sources */,
+				9C35B4D829C0BE3400AFD434 /* Dish.swift in Sources */,
 				9C35B4A829C0832000AFD434 /* AppDelegate.swift in Sources */,
 				9C35B4AA29C0832000AFD434 /* SceneDelegate.swift in Sources */,
 			);
